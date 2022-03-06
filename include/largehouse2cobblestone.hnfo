@@ -1,0 +1,26 @@
+// Large Mediterranean House 2 Cobblestone
+
+// Action 1:
+    0 * 0	 01 07 02 FF 01 00
+    
+// Real Sprites:
+    0 art/cmbs.png 8bpp 10 10 64 31 -31 0 normal
+    0 art/cmbs.png 8bpp 84 189 64 59 -31 -28 normal
+
+// Action 0 to set properties:   
+#include "action0s/largehousecobblestone.hnfo"
+
+// Action 4 to set name:  
+    0 * 0	 04 07  // Action 4, Feature 7
+                 FF // Language ID
+                 01 // Number of strings to change
+                 BUILDING_ID C9 // Offset
+                 "Large Mediterranean House" 00 // String
+                 
+// Action 0 to set properties:   
+#include "action2s/cobblestone.hnfo"
+
+// Assign last action2 to id.0:
+    0 * 0	 03 07 01 BUILDING_ID 00 FF 00 
+
+// Fin
